@@ -1,0 +1,12 @@
+if __name__ == '__main__':
+    n = int(input())
+    student_marks = {}
+    for _ in range(n):
+        l=input().split()
+        name=l[0]
+        scorea= float(l[1])
+        scoreb= float(l[2])
+        scorec= float(l[3])
+        student_marks[name] = (scorea+scoreb+scorec)/3
+    query_name = input()
+    print("{:0.2f}".format(student_marks[query_name]))
